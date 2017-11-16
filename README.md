@@ -3,11 +3,13 @@
 
 ## Install SDL 1.2
 
-1. Download [`install-sdl.sh`](../install-sdl.sh).
+1. Download [`install-sdl.sh`](../master/install-sdl.sh).
 2. Open Terminal.
 
 3. In Terminal:
+
 ...`cd ~/Downloads/`  (Or where install-sdl.sh is.)
+
 ... `sudo sh install-sdl.sh`
 
 SDL 1.2 is installed.
