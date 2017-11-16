@@ -17,9 +17,9 @@ fi
 
 # INSTALLING SDL 1.2
 
-echo "Installing SDL 1.2 and: sdl_gfx  sdl_ttf  sdl_image  sdl_mixes"
+echo "Installing SDL 1.2 and: sdl_gfx  sdl_ttf  sdl_image  sdl_mixer"
 
-brew install sdl  sdl_gfx  sdl_ttf  sdl_image  sdl_mixes
+brew install sdl  sdl_gfx  sdl_ttf  sdl_image  sdl_mixer
 ## if any error hapens, try: brew install --force  
 
 

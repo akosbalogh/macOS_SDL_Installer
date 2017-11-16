@@ -13,9 +13,16 @@
    `sudo sh install-sdl.sh`
 
 #### Now, SDL 1.2 is installed.
-To use it, you can use gcc compiler.
+To use it, you can use gcc compiler:
 
 ```bash
 gcc hello.c -o hello `sdl-config --cflags --libs` -lSDL -lSDL_main -lSDL_gfx -lSDL_ttf -lSDL_image -lSDL_mixer -framework Cocoa
 ```
 
+To include it in your C projects:
+
+```C
+#include <SDL/SDL.h>
+#include <SDL_gfx/SDL_gfxPrimitives.h>
+#include <math.h>
+```
