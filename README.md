@@ -15,5 +15,7 @@
 #### Now, SDL 1.2 is installed.
 To use it, you can use gcc compiler.
 
-``gcc hello.c -o hello `sdl-config --cflags --libs` -lSDL -lSDL_main -lSDL_gfx -lSDL_ttf -lSDL_image -lSDL_mixer -framework Cocoa``
+```bash
+gcc hello.c -o hello `sdl-config --cflags --libs` -lSDL -lSDL_main -lSDL_gfx -lSDL_ttf -lSDL_image -lSDL_mixer -framework Cocoa
+```
 
