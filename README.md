@@ -1,5 +1,15 @@
-# macOS_SDL_Installer
+# macOS SDL installe
 ###### This is a basic tutorial to install SDL 1.2 or 2 on macOS
+-
+
+#Table of contents:
+
+* Install SDL
+ * [Install SDL 1.2](#install-sdl-12)
+ * [Install SDL 2](#install-sdl-2)
+* [Using SDL with CLion](#using-sdl-with-clion)
+* [Using SDL with XCode](#using-sdl-with-xcode)
+
 
 ## Install SDL 1.2
 
@@ -10,7 +20,7 @@
 
    `cd ~/Downloads/`  (Or where install-sdl.sh is.)
 
-   `sudo sh install-sdl.sh`
+   `sh install-sdl.sh`
 
 #### Now, SDL 1.2 is installed.
 To use it, you can use gcc compiler:
@@ -27,3 +37,16 @@ To include it in your C projects:
 #include <SDL_gfx/SDL_gfxPrimitives.h>
 ...
 ```
+
+
+
+## Install SDL 2
+###### (TODO)
+
+
+# Using SDL with CLion
+###### (TODO) (other_resources/CMakeLists.txt)
+-
+# Using SDL with XCode
+###### (TODO) (Just linker flag setup)
+-
