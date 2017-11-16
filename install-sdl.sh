@@ -2,6 +2,7 @@
 #  This bash script installs Hoembrew and SDL 1.2 for macOS.
 ##
 
+#HOMEBREW
 
 # INSTALLING HOMEBREW (if it isn't installed yet)
 
