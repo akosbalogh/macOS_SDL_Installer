@@ -1,5 +1,5 @@
 # macOS SDL 1.2 installer
-###### Rövid, egyszerű tutorial SDL 1.2 telepítéséhez Prog1-hez. Jelenleg GCC compiler tutorial-t és egy cMake file-t tartalmaz a repo. Más programokban, pl.: xCode is ezeket a flageket kell használni, mint GCC-nél
+###### Rövid, egyszerű tutorial SDL 1.2 telepítéséhez macOS-en. Jelenleg GCC compiler tutorial-t és egy cmake file-t tartalmaz a repo. Más programokban, pl.: xCode is ezeket a flageket kell használni, mint a GCC-nél.
 
 ## SDL 1.2 Telepítése
 
@@ -17,12 +17,19 @@ Ahhoz hogy használhassuk az SDL a legegyszerűbb módon idd egy példa __GCC__ 
 gcc sample-sdl-code.c -o workingSDL `sdl-config --cflags --libs` -lSDL -lSDLmain -lSDL_gfx -lSDL_ttf -lSDL_image -lSDL_mixer -framework Cocoa
 ```
 Értelmezés:
+
 gcc -  compiler
+
 sample-sdl-code.c - fordítandó C file-ok, lehet pl.: *.c is.
+
 -o workingSDL - az output file, amibe összelinkeli az object file-okat.
-\`sdl-config --cflags --libs\` - ez output-ol az SDL-hez pár flag-et, lib-et, jó ha mindig marad.
+
+`` `sdl-config --cflags --libs` `` - ez output-ol az SDL-hez pár flag-et, lib-et, jó ha mindig marad.
+
 -lSDL -lSDLmain - Ezek kellenek alapból, SDL flag-ek, hogy használja a fordító, mint library.
+
 -lSDL_gfx -lSDL_ttf -lSDL_image -lSDL_mixer - Ezek opcionálisak, azt tedd be ami kell neked :).
+
 -framework Cocoa macOS ablakkezeléshez elengedhetetlen.
 
 Hogyan include-olj projektekben? Picit másabb mint az infoC-s példáknál.
