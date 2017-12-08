@@ -3,7 +3,7 @@
 
 ## SDL 1.2 Telepítése
 
-1. Töltsd le ezt: [`install-sdl.sh`](../install-sdl.sh?raw=true). (Alt+Click) Ez telepíti azokat amik kellenek az SDL-hez, és még nincsenek fent a gépeden.
+1. Töltsd le ezt: [`install-sdl.sh`](../infoc/install-sdl.sh?raw=true). (Alt+Click) Ez telepíti azokat amik kellenek az SDL-hez, és még nincsenek fent a gépeden.
 2. Nyisd meg a Terminal-t.
 3. Terminal-ban írd be, hogy:
 
