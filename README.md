@@ -1,34 +1,31 @@
-# macOS SDL installer with Sample code
-###### This is a basic tutorial to install SDL 1.2 or 2 on macOS
+# macOS SDL 1.2 installer
+###### Rövid, egyszerű tutorial SDL 1.2 telepítéséhez Prog1-hez. Jelenleg GCC compiler tutorial-t és egy cMake file-t tartalmaz a repo. Más programokban, pl.: xCode is ezeket a flageket kell használni, mint GCC-nél
 
-# Table of contents:
+## SDL 1.2 Telepítése
 
-* Install SDL
-   * [Install SDL 1.2](#install-sdl-12)
-   * [Install SDL 2](#install-sdl-2)
-* [Using SDL with CLion](#using-sdl-with-clion)
-* [Using SDL with XCode](#using-sdl-with-xcode)
+1. Töltsd le ezt: [`install-sdl.sh`](../install-sdl.sh?raw=true). (Alt+Click) Ez telepíti azokat amik kellenek az SDL-hez, és még nincsenek fent a gépeden.
+2. Nyisd meg a Terminal-t.
+3. Terminal-ban írd be, hogy:
 
-
-## Install SDL 1.2
-
-1. Get [`install-sdl.sh`](../master/install-sdl.sh?raw=true). (Alt+Click)
-2. Open Terminal.
-
-3. In Terminal:
-
-   `cd ~/Downloads/`  (Or where install-sdl.sh is.)
-
+   `cd ~/Downloads/`  (Vagy ahova letöltötted az _install-sdl.sh_-t.)
+4. Majd ezzel futtasd le:
    `sh install-sdl.sh`
 
-#### Now, SDL 1.2 is installed.
-To use it, you can use gcc compiler:
-
+#### Így a HomeBrew package manager, feltelepült, ha nem volt fent, és azzal felraktuk a legfontosabb SDL-modulokat.
+Ahhoz hogy használhassuk az SDL a legegyszerűbb módon idd egy példa __GCC__ fordítóhoz.
 ```bash
 gcc sample-sdl-code.c -o workingSDL `sdl-config --cflags --libs` -lSDL -lSDLmain -lSDL_gfx -lSDL_ttf -lSDL_image -lSDL_mixer -framework Cocoa
 ```
+Értelmezés:
+gcc -  compiler
+sample-sdl-code.c - fordítandó C file-ok, lehet pl.: *.c is.
+-o workingSDL - az output file, amibe összelinkeli az object file-okat.
+\`sdl-config --cflags --libs\` - ez output-ol az SDL-hez pár flag-et, lib-et, jó ha mindig marad.
+-lSDL -lSDLmain - Ezek kellenek alapból, SDL flag-ek, hogy használja a fordító, mint library.
+-lSDL_gfx -lSDL_ttf -lSDL_image -lSDL_mixer - Ezek opcionálisak, azt tedd be ami kell neked :).
+-framework Cocoa macOS ablakkezeléshez elengedhetetlen.
 
-To include it in your C projects:
+Hogyan include-olj projektekben? Picit másabb mint az infoC-s példáknál.
 
 ```C
 ...
@@ -36,15 +33,3 @@ To include it in your C projects:
 #include <SDL_gfx/SDL_gfxPrimitives.h>
 ...
 ```
-
-
-
-## Install SDL 2
-###### (TODO)
-
-
-# Using SDL with CLion
-###### (TODO) (other_resources/CMakeLists.txt)
-
-# Using SDL with XCode
-###### (TODO) (Just linker flag setup)
