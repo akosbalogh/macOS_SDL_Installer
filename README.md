@@ -12,7 +12,7 @@
    `sh install-sdl.sh`
 
 #### Így a HomeBrew package manager, feltelepült, ha nem volt fent, és azzal felraktuk a legfontosabb SDL-modulokat.
-Ahhoz hogy használhassuk az SDL a legegyszerűbb módon idd egy példa __GCC__ fordítóhoz.
+Ahhoz hogy használhassuk az SDL a legegyszerűbb módon itt egy példa __GCC__ fordítóhoz.
 ```bash
 gcc sample-sdl-code.c -o workingSDL `sdl-config --cflags --libs` -lSDL -lSDLmain -lSDL_gfx -lSDL_ttf -lSDL_image -lSDL_mixer -framework Cocoa
 ```
